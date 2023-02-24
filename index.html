@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Reproductor Demo</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="cuadrado" style="--i:0"></div>
+        <div class="cuadrado" style="--i:1"></div>
+        <div class="cuadrado" style="--i:2"></div>
+        <div class="img-container">
+            <img src="media/song1.jpg" alt="">
+        </div>
+        <h2 id="titulo">Titulo de la cancion</h2>
+        <h3 id="artista">Artista</h3>
+        <audio src="audio/song1.mp3"></audio>
+
+        <div class="progressBar" id="progressBar">
+            <div class="progress" id="progress"></div>
+            <div class="duracion">
+                <span id="tiempoActual">0.00</span>
+                <span id="tiempoDuracion">2:00</span>
+            </div>
+        </div>
+
+        <div class="controles"> 
+            <ion-icon name="play-skip-back-outline" id="prev"></ion-icon>
+            <ion-icon name="play-outline" id="play"></ion-icon>
+            <ion-icon name="play-skip-forward-outline" id="next"></ion-icon>
+        </div>
+    </div>
+
+
+    <script src="script/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
